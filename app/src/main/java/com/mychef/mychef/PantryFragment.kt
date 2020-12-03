@@ -25,9 +25,9 @@ import kotlinx.android.synthetic.main.search_item.view.*
 data class FoodStuff(var name: String, var Quantity: Int,  var Photo: Int)
 
 public var pantryList = listOf(
-    FoodStuff("Yellow Onion", 3, R.drawable.onion_yellow),
-    FoodStuff("Linguine (1Lb)", 7, R.drawable.linguine_1lb),
-    FoodStuff("Red Chili Flakes", 2, R.drawable.chili_flakes),
+    FoodStuff("Yellow Onion", 0, R.drawable.onion_yellow),
+    FoodStuff("Linguine (1Lb)", 0, R.drawable.linguine_1lb),
+    FoodStuff("Red Chili Flakes", 0, R.drawable.chili_flakes),
     FoodStuff("Salt (Tablespoon)", 0, R.drawable.salt),
     FoodStuff("Pepper (Tablespoon)", 0, R.drawable.pepper),
     FoodStuff("Coriander (Tablespoon)", 0, R.drawable.coriander),
