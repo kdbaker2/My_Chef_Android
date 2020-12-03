@@ -1,11 +1,13 @@
 package com.mychef.mychef
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -14,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val pantryFragment = PantryFragment()
         val listFragment = ListFragment()
         val moreFragment = MoreFragment()
+        val searchFragment = SearchFragment()
 
         setCurrentFragment(favoritesFragment)
 
@@ -23,9 +26,11 @@ class MainActivity : AppCompatActivity() {
                 R.id.miPantry -> setCurrentFragment(pantryFragment)
                 R.id.miList -> setCurrentFragment(listFragment)
                 R.id.miMore -> setCurrentFragment(moreFragment)
+                R.id.miSearch -> setCurrentFragment(searchFragment)
             }
             true
         }
+
     }
 
     private fun setCurrentFragment(fragment: Fragment){
